@@ -26,25 +26,25 @@
 
 </nav>
          
-        <div class="container mt-4 col-lg-4">
-            <div class="card col-sm-10">
+        <div class="container mt-4 col-lg-3" >
+            <div class="card col-sm-10 " style="background-image: url('img/background.png')" >
                 
                 <div class="card-body ">
                     <form action="Validar" method="POST">
                         <div class="form-group text-center" >
-                            <h3>Login</h3>
+                            <h3 style="color: #fefefe">Login</h3>
                             <img src="img/logo.png" alt="70" width="170"/><br>
-                            <label>Bienvenidos al sistema</label>
+                            <label style="color: #fefefe">Bienvenidos al sistema</label>
                         </div>
                          <div class="form-group">
-                             <label>Usuario:</label>
+                             <label style="color: #fefefe">Usuario:</label>
                              <input type="text" name="txtuser" class="form-control">
                         </div>
                          <div class="form-group">
-                             <label>Password:</label>
+                             <label style="color: #fefefe">Password:</label>
                              <input type="password" name="txtpass" class="form-control">
                         </div>
-                        <input type="submit" name="accion" value="Ingresar" class="btn btn-primary btn-block">
+                        <input type="submit" name="accion" value="Ingresar" class="btn btn-info btn-block">
                     </form>
                 </div>        
             </div>  

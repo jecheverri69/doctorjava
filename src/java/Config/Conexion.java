@@ -15,7 +15,7 @@ import java.sql.SQLException;
  */
 public class Conexion {
     Connection con;
-      String url="jdbc:mysql://localhost:3306/dcshots";
+      String url="jdbc:mysql://localhost:3306/shots";
         String user="jerson";
         String pass="jerson123";
     public Connection Conexion() { 

@@ -12,3 +12,20 @@ and open the template in the editor.
      background: url(../img/oWlyMvz.gif) ; 
  
 }
+
+.img-log{
+    background-image: url("../img/background.png");
+}
+
+.midropdow{
+    
+    margin-left: 50px;
+    border: none ;
+    font-size:40px;
+}
+
+.img-rol{
+    width: 10%; 
+    
+    
+}

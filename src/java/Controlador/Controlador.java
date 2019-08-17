@@ -59,15 +59,20 @@ public class Controlador extends HttpServlet {
                     u.setCedula(Integer.parseInt(cedula));
                     u.setUsuario(nombre);
                     u.setContraseña(contraseña);
-                    u.setRol(Boolean.parseBoolean(rol));
+                    u.setRol(rol);
                     udao.agregar(u);
                     request.getRequestDispatcher("Controlador?menu=Empleados&accion=Listar").forward(request, response);
 
                     break;    
                 case "Editar":
-                    cd=Integer.parseInt(request.getParameter("cedula"));
                     Usuario uu=udao.Listarcedula(cd);
-                    
+                    cd=(uu.getCedula());
+                    System.out.println(cd);
+                    System.out.println(uu);
+                    request.setAttribute("usuarios", uu);
+                    System.out.println("llego");    
+                    request.getRequestDispatcher("Controlador?menu=Empleados&accion=Listar").forward(request, response);
+
                     break;
                 case "Delete":
                     break;  
@@ -75,6 +80,7 @@ public class Controlador extends HttpServlet {
                     throw new AssertionError();
             }
         request.getRequestDispatcher("Empleados.jsp").forward(request, response);
+            
         }
         
       

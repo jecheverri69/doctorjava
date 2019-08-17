@@ -1,4 +1,4 @@
-<%-- 
+    <%-- 
     Document   : n
     Created on : 6/08/2019, 03:56:39 PM
     Author     : jerson
@@ -24,6 +24,8 @@
 <!-- Bootstrap CSS -->
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="mycss/miestilo.css">
+
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
@@ -86,7 +88,7 @@
 </li>
 </ul>
 <div class="dropdown">
-  <button type="button" class="btn btn-outline-light dropdown-toggle font-weight-bold px-3" data-toggle="dropdown" style="margin-left: 100px; border: none ; font-size:36px">
+  <button type="button" class="btn btn-outline-light dropdown-toggle font-weight-bold px-3 midropdow" data-toggle="dropdown" >
    ${usuario.getUsuario()}
   </button>
   <div class="dropdown-menu text-center">

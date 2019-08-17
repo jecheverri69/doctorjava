@@ -40,7 +40,7 @@ public class UsuarioDAO {
                us.setCedula(rs.getInt("cedula"));
                us.setUsuario(rs.getString("usuario"));
                us.setContraseña(rs.getString("contraseña"));
-               us.setRol(rs.getBoolean("rol"));                
+               us.setRol(rs.getString("rol"));                
             }
             
         } catch (SQLException e) {
@@ -65,7 +65,7 @@ public class UsuarioDAO {
             u.setCedula(rs.getInt(1));
             u.setUsuario(rs.getString("usuario"));
             u.setContraseña(rs.getString("contraseña"));
-            u.setRol(rs.getBoolean("rol")); 
+            u.setRol(rs.getString("rol")); 
             lista.add(u);
             
                 
@@ -82,7 +82,7 @@ public class UsuarioDAO {
              ps.setInt(1, u.getCedula());
             ps.setString(2, u.getUsuario());
             ps.setString(3, u.getContraseña());
-            ps.setBoolean(4, u.getRol());
+            ps.setString(4, u.getRol());
          
             ps.executeUpdate();
         } catch (SQLException e) {
@@ -100,10 +100,10 @@ public class UsuarioDAO {
      ps=con.prepareStatement(sql);
      rs=ps.executeQuery();
       while (rs.next()) {         
-            u.setCedula(rs.getInt(1));
+            u.setCedula(rs.getInt("cedula"));
             u.setUsuario(rs.getString("usuario"));
             u.setContraseña(rs.getString("contraseña"));
-            u.setRol(rs.getBoolean("rol")); 
+            u.setRol(rs.getString("rol")); 
         }
             
         } catch (SQLException e) {
@@ -120,7 +120,7 @@ public class UsuarioDAO {
              ps.setInt(1, u.getCedula());
             ps.setString(2, u.getUsuario());
             ps.setString(3, u.getContraseña());
-            ps.setBoolean(4, u.getRol());
+            ps.setString(4, u.getRol());
             ps.executeUpdate();
         } catch (SQLException e) {
         }

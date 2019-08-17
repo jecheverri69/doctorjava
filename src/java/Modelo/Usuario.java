@@ -13,12 +13,12 @@ public class Usuario {
     int cedula;
     String usuario;
     String contraseña;
-    Boolean Rol;
+    String Rol;
 
     public Usuario() {
     }
 
-    public Usuario(int cedula, String usuario, String contraseña, Boolean Rol) {
+    public Usuario(int cedula, String usuario, String contraseña, String Rol) {
         this.cedula = cedula;
         this.usuario = usuario;
         this.contraseña = contraseña;
@@ -49,11 +49,11 @@ public class Usuario {
         this.contraseña = contraseña;
     }
 
-    public Boolean getRol() {
+    public String getRol() {
         return Rol;
     }
 
-    public void setRol(Boolean Rol) {
+    public void setRol(String Rol) {
         this.Rol = Rol;
     }
      

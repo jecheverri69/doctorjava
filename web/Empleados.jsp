@@ -38,16 +38,17 @@
         <div class="d-flex">
             <div class="card col-sm-6">
                 <div class="card-body">
-                    <form action="Controlador?menu=Empleados" method="POST">
+                    <form action="Controlador?menu=Empleados"   method="POST">
                         <div class="form-group">
                             <label>Cedula</label>
-                            <input type="text" name="txtcedula" class="form-control">                            
+                            <input type="text" name="txtcedula"  class="form-control">                            
                         </div>
-
+                      
                         <div class="form-group">
                             <label>Nombres</label>
-                            <input type="text" name="txtnombre" class="form-control">                            
+                            <input type="text" name="txtnombre" value="${uu.getUsuario()}" class="form-control">                            
                         </div>
+                        
 
 
                         <div class="form-group">
@@ -59,8 +60,8 @@
                             <label>Rol</label><br>
                             <select name="Rol">
 
-                                <option value="true">Admin</option>
-                                <option value="false">Empleado</option>
+                                <option value="administrador">Admin</option>
+                                <option value="empleado">Empleado</option>
 
 
                             </select>                          
@@ -89,10 +90,10 @@
                             <tr>
                                 <td>${em.getCedula()}</td>
                                 <td>${em.getUsuario()}</td>
-                                <td>${em.getRol()}</td>   
+                                <td><img src="img/${em.getRol()}.png"></td>   
                                 <td>
-                                    <a class="btn btn-warning" href="Controlador?menu=Empleado&accion=Editar&cedula="${u.getcedula()}>Editar</a>
-                                    <a class="btn btn-danger"href="Controlador?menu=Empleado&accion=Delete&cedula="${u.getcedula()} >Delete</a>
+                                    <a class="btn btn-warning" href="Controlador?menu=Empleados&accion=Editar&cedula="${em.getCedula()}>Editar</a>
+                                    <a class="btn btn-danger"href="Controlador?menu=Empleados&accion=Delete&cedula="${em.getCedula()} >Delete</a>
                                 </td>
                             </tr>
                         </c:forEach>
