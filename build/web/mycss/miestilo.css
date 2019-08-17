@@ -29,3 +29,49 @@ and open the template in the editor.
     
     
 }
+@font-face
+{
+   font-family:Lethal Slime;
+   src: url("Lethal Slime.ttf") format("truetype");
+}
+
+.font-crazy{
+    font-family: Lethal Slime;
+}
+@font-face
+{
+   font-family:Peinture Fraiche;
+   src: url("Peinture Fraiche.ttf") format("truetype");
+}
+
+.font-old-school{
+    font-family: Penture Fraiche;
+}
+
+.upper{
+     text-transform: uppercase;
+}
+        
+.nav{
+
+  align-items: center;
+}
+.inner {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 50%;
+    padding: 40px;
+    }
+
+
+
+@media screen and (max-width: 100%) {
+  .inner {
+    width: calc(100% - 80px);
+  }
+}
+
+.img-responsive {
+    width:100%;
+    max-width:400px;
+}

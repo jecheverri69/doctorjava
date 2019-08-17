@@ -4,17 +4,15 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/jerson/NetBeansProjects/doctorshots/web/principal.jsp</file>
+            <file>file:/home/jerson/NetBeansProjects/doctorshots/web/js/mijs.js</file>
             <file>file:/home/jerson/NetBeansProjects/doctorshots/web/img/empleado.png</file>
-            <file>file:/home/jerson/NetBeansProjects/doctorshots/src/java/Modelo/UsuarioDAO.java</file>
             <file>file:/home/jerson/NetBeansProjects/doctorshots/web/index.jsp</file>
             <file>file:/home/jerson/NetBeansProjects/doctorshots/src/java/Controlador/Controlador.java</file>
-            <file>file:/home/jerson/NetBeansProjects/doctorshots/src/java/Config/Conexion.java</file>
-            <file>file:/home/jerson/NetBeansProjects/doctorshots/web/js/mijs.js</file>
             <file>file:/home/jerson/NetBeansProjects/doctorshots/web/mycss/miestilo.css</file>
             <file>file:/home/jerson/NetBeansProjects/doctorshots/src/java/Controlador/Validar.java</file>
             <file>file:/home/jerson/NetBeansProjects/doctorshots/web/producto.jsp</file>
             <file>file:/home/jerson/NetBeansProjects/doctorshots/web/Empleados.jsp</file>
-            <file>file:/home/jerson/NetBeansProjects/doctorshots/src/java/Modelo/Usuario.java</file>
+            <file>file:/home/jerson/NetBeansProjects/doctorshots/src/java/Config/Conexion.java</file>
             <file>file:/home/jerson/NetBeansProjects/doctorshots/web/img/administrador.png</file>
         </group>
     </open-files>

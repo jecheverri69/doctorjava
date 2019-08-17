@@ -12,13 +12,15 @@
         <link rel="stylesheet" href="mycss/miestilo.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <title>Login</title>
+        <title >Login</title>
     </head>
     <body class="body-yo" >
        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <ul class="navbar-nav">
+  
     <li class="nav-item active">
-      <a class="btn btn-outline-light" style="margin-left: 50px; border: none ; font-size:30px" href="#">INICIAR SESION</a>
+      <a class="btn btn-outline-light font-crazy upper" align="center" style=" border: none ; font-size:30px"
+         href="#">welcome to doctor shot</a>
     </li>
   
   </ul>
@@ -26,22 +28,22 @@
 
 </nav>
          
-        <div class="container mt-4 col-lg-3" >
-            <div class="card col-sm-10 " style="background-image: url('img/background.png')" >
+        <div class="container mt-4 col-lg-3 " >
+            <div class="card col-sm-10 inner " style="background-image: url('img/background.png')" >
                 
                 <div class="card-body ">
                     <form action="Validar" method="POST">
                         <div class="form-group text-center" >
-                            <h3 style="color: #fefefe">Login</h3>
-                            <img src="img/logo.png" alt="70" width="170"/><br>
-                            <label style="color: #fefefe">Bienvenidos al sistema</label>
+                            <h3 class="font-crazy upper" style="color: #fefefe">Login</h3>
+                            <img src="img/logo.png" class="img-responsive" alt="70" width="170"/><br>
+                            
                         </div>
                          <div class="form-group">
-                             <label style="color: #fefefe">Usuario:</label>
+                             <label  class="font-crazy upper" style="color: #fefefe">Usuario:</label>
                              <input type="text" name="txtuser" class="form-control">
                         </div>
                          <div class="form-group">
-                             <label style="color: #fefefe">Password:</label>
+                             <label class="font-crazy upper" style="color: #fefefe">Password:</label>
                              <input type="password" name="txtpass" class="form-control">
                         </div>
                         <input type="submit" name="accion" value="Ingresar" class="btn btn-info btn-block">
