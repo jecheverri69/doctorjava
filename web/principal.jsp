@@ -65,42 +65,42 @@
 
 <li class="nav-item" >
 
-<a class="btn btn-outline-light font-weight-bold px-3" href="#" style="margin-left: 10px; border: none">INICIO</a>
+<a class="btn btn-outline-light font-crazy font-weight-bold px-3" href="#" style="margin-left: 10px; border: none">INICIO</a>
 
 </li>
 
 <li class="nav-item">
 
-<a class="btn btn-outline-light text-light font-weight-bold px-3" href="Controlador?menu=Empleados&accion=Listar" target="myframe" style="margin-left: 10px; border: none">USUARIOS</a>
+<a class="btn btn-outline-light font-crazy text-light font-weight-bold px-3" href="Controlador?menu=Empleados&accion=Listar" target="myframe" style="margin-left: 10px; border: none">USUARIOS</a>
 
 </li>
 
 <li class="nav-item">
 
-<a class="btn btn-outline-light text-light font-weight-bold px-3" href="Controlador?menu=producto" target="myframe" style="margin-left: 10px; border: none">INVENTARIO</a>
+<a class="btn btn-outline-light font-crazy text-light font-weight-bold px-3" href="Controlador?menu=producto" target="myframe" style="margin-left: 10px; border: none">INVENTARIO</a>
 
 </li>
 
 <li class="nav-item">
 
-<a class="btn btn-outline-light text-light font-weight-bold px-3" href="Controlador?menu=RegistrarVenta" target="myframe" style="margin-left: 10px; border: none">NUEVA VENTA</a>
+<a class="btn btn-outline-light font-crazy text-light font-weight-bold px-3" href="Controlador?menu=RegistrarVenta" target="myframe" style="margin-left: 10px; border: none">NUEVA VENTA</a>
 
 </li>
 </ul>
 <div class="dropdown">
-  <button type="button" class="btn btn-outline-light dropdown-toggle font-weight-bold px-3 midropdow" data-toggle="dropdown" >
+  <button type="button" class="btn upper font-old-school btn-outline-light dropdown-toggle font-weight-bold px-3 midropdow" data-toggle="dropdown" >
    ${usuario.getUsuario()}
   </button>
   <div class="dropdown-menu text-center">
       <a class="dropdown-item" href="#">
           <img src="img/user.png" alt="60" width="90"/>
       </a>
-    <a class="dropdown-item" href="#">Administrador</a>
-    <a class="dropdown-item" href="#">ADmin@misena.edu.co</a>
+    <a class="dropdown-item font-crazy upper" href="#">Administrador</a>
+    <a class="dropdown-item font-crazy upper" href="#">ADmin@misena.edu.co</a>
     <div class="dropdown-divider"></div>
     <form method="POST" action="Validar">
     
-    <button name="accion" value="Salir" class="dropdown-item">Salir</button>
+    <button name="accion" value="Salir" class="dropdown-item font-drop upper">Salir</button>
     </form>
   </div>
 </div>

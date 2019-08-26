@@ -14,7 +14,7 @@
 
         <title >Login</title>
     </head>
-    <body class="body-yo" >
+    <body class="body-login" >
        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <ul class="navbar-nav">
   

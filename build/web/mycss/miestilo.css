@@ -7,9 +7,26 @@ and open the template in the editor.
     Created on : 7/08/2019, 12:30:50 PM
     Author     : jerson
 */
-.body-yo{
+.body-login{
     
      background: url(../img/oWlyMvz.gif) ; 
+ 
+}
+.trans{
+background-color:Transparent;
+color:#CC0000;
+position:absolute;
+text-align:center;
+top:50px;
+left:40px;
+padding:65px;
+font-size:25px;
+font-weight:bold;
+width:300px;
+}
+.body-Empleados{
+    
+     background: url(../img/ezgif.com-gif-maker.gif) ; 
  
 }
 
@@ -21,8 +38,9 @@ and open the template in the editor.
     
     margin-left: 50px;
     border: none ;
-    font-size:40px;
+    font-size:20px;
 }
+
 
 .img-rol{
     width: 10%; 
@@ -48,6 +66,43 @@ and open the template in the editor.
     font-family: Penture Fraiche;
 }
 
+@font-face
+{
+   font-family:DoubleFeature20;
+   src: url("DoubleFeature20.ttf") format("truetype");
+}
+
+.font-drop{
+    font-family: DoubleFeature20;
+}
+@font-face
+{
+   font-family:PAC-FONT;
+   src: url("PAC-FONT.TTF") format("truetype");
+}
+
+.font-pacman{
+    font-family: PAC-FONT;
+}
+@font-face
+{
+   font-family:NEON;
+   src: url("Neon.ttf") format("truetype");
+}
+
+.font-Neon{
+    font-family: NEON;
+}
+.font-color-drop{
+    color: #000;
+    font-size: 40px;
+}
+
+ .col-sm-6-my {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 40%;
+  }
 .upper{
      text-transform: uppercase;
 }
@@ -74,4 +129,27 @@ and open the template in the editor.
 .img-responsive {
     width:100%;
     max-width:400px;
+}
+
+.font-color-drop-little{
+    color: #000;
+    font-size: 20px;
+}
+@font-face
+{
+   font-family:Doctor Glitch;
+   src: url("Streetlight.ttf") format("truetype");
+}
+
+.font-Doctor{
+    font-family:Doctor Glitch;
+}
+.my-oppacity{
+    
+background: url("../img/3-2-lion-png.png");
+
+}
+
+.no-oppacity{
+    opacity: 1;
 }

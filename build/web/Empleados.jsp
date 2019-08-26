@@ -10,6 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="mycss/miestilo.css">
 
 
 
@@ -36,36 +37,37 @@
     </head>
     <body>
         <div class="d-flex">
-            <div class="card col-sm-6">
-                <div class="card-body">
+            <div class="card col-sm-6-my my-oppacity" >
+                <div class="card-body ">
                     <form action="Controlador?menu=Empleados"   method="POST">
                         <div class="form-group">
-                            <label>Cedula</label>
+                            <label class="font-drop upper font-color-drop-little " >Cedula</label>
                             <input type="text" name="txtcedula"  class="form-control">                            
                         </div>
                       
                         <div class="form-group">
-                            <label>Nombres</label>
-                            <input type="text" name="txtnombre" value="${uu.getUsuario()}" class="form-control">                            
+                            <label class="font-drop upper font-color-drop-little">Nombres</label>
+                            <input type="text" name="txtnombre"  class="form-control">                            
                         </div>
                         
 
 
                         <div class="form-group">
-                            <label>Contraseña</label>
+                            <label class="font-drop upper font-color-drop-little">Contraseña</label>
                             <input type="text" name="txtpass" class="form-control">                            
                         </div>
 
                         <div class="form-group">
-                            <label>Rol</label><br>
-                            <select name="Rol">
-
-                                <option value="administrador">Admin</option>
-                                <option value="empleado">Empleado</option>
+                            <label class="font-drop upper font-color-drop-little">Rol</label><br>
+                            <select name="Rol" class="browser-default custom-select">
+                                <option selected>Elige</option>
+                                <option class="font-drop upper font-color-drop-little" value="administrador">Administrador</option>
+                                <option class="font-drop upper font-color-drop-little" value="empleado">Empleado</option>
 
 
                             </select>                          
                         </div>
+                           
                         <input type="submit" name="accion" value="Agregar" class="btn btn-info">                        
                     </form>
 
@@ -78,22 +80,22 @@
                 <table class="table text-hover">
                     <thead>
                         <tr>
-                            <th>Cedula</th>
-                            <th>Nombre</th>
-                            <th>Rol</th>
-                            <th>Acciones</th>
+                            <th class="font-drop upper font-color-drop">Cedula</th>
+                            <th class="font-drop upper font-color-drop">Nombre</th>
+                            <th class="font-drop upper font-color-drop">Rol</th>
+                            <th class="font-drop upper font-color-drop" >Acciones</th>
 
                         </tr>
                     </thead>
                     <tbody>
                         <c:forEach var="em" items="${empleados}">
                             <tr>
-                                <td>${em.getCedula()}</td>
-                                <td>${em.getUsuario()}</td>
-                                <td><img src="img/${em.getRol()}.png"></td>   
+                                <td class="font-Neon">${em.getCedula()}</td>
+                                <td class="font-pacman">${em.getUsuario()}</td>
+                                <td ><img src="img/${em.getRol()}.png"></td>   
                                 <td>
-                                    <a class="btn btn-warning" href="Controlador?menu=Empleados&accion=Editar&cedula="${em.getCedula()}>Editar</a>
-                                    <a class="btn btn-danger"href="Controlador?menu=Empleados&accion=Delete&cedula="${em.getCedula()} >Delete</a>
+                                    <a class="btn btn-warning font-drop" href="Controlador?menu=Empleados&accion=Editar&cedula="${em.getCedula()}>Editar</a>
+                                    <a class="btn btn-danger font-drop"href="Controlador?menu=Empleados&accion=Delete&cedula="${em.getCedula()} >Delete</a>
                                 </td>
                             </tr>
                         </c:forEach>
